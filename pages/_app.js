@@ -1,3 +1,4 @@
+import AppContext from '../AppContext'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {

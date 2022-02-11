@@ -1,0 +1,32 @@
+.navbar {
+    margin: .75rem auto 1rem;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1048px;
+    height: 100%;
+}
+
+.link {
+    color: var(--accent-2);
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: .5rem .75rem;
+    border-radius: var(--radius);
+    transition: background-color .2s ease;
+}
+
+.active-link {
+    color: var(--black);
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: .5rem .75rem;
+    border-radius: var(--radius);
+    transition: background-color .2s cubic-bezier(0.01, 0.29, 0.25, 1);
+}
+
+.link:hover, .active-link:hover{
+    background-color: var(--accent-1);
+}
