@@ -1,20 +1,14 @@
-import { useState } from 'react'
 import ErrorMessage from "./ErrorMessage"
 import styles from "../styles/RegisterForm.module.css"
 import { useRouter } from 'next/router';
+import { useContext } from "react";
+import AppContext from '../AppContext';
 
 
 const RegisterForm = () => {
 
-    const [email, setEmail] = useState("");
-    const [name, setName] = useState("");
-    const [surname, setSurname] = useState("");
-    const [country, setCountry] = useState("");
-    const [city, setCity] = useState("");
-    const [about, setAbout] = useState("");
-    const [error, setError] = useState(false);
-    const [avatar, setAvatar] = useState("");
-
+    const {email, setEmail, name, setName, surname, setSurname, country, setCountry, city, setCity, about, setAbout, error, setError, setAvatar} = useContext(AppContext);
+    
     const router = useRouter();
 
     const handleSubmit = e => {

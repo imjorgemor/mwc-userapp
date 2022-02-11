@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Header from './Header'
 import Navbar from './Navbar'
+import { useRouter } from 'next/router'
 
 const Layout = ({ children, page }) => {
+
+    const {route} = useRouter();
     
     return (
         <div>
@@ -11,7 +14,12 @@ const Layout = ({ children, page }) => {
                 <meta name="description" content="website of the MWC22 challenge hackaton" />
             </Head>
             <Header/>
-            <Navbar />
+
+            {
+                 route !== "/" && <Navbar />
+            }
+
+            
 
             {children}
         </div>
