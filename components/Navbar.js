@@ -9,16 +9,14 @@ const Navbar = () => {
 
     const navLinks = [
         { title: "Overview", path: "/dashboard" },
-        { title: "Professional", path: "/professional" },
+        { title: "Professional", path: "/experience" },
         { title: "Settings", path: "/account" },
         { title: "Log out", path: "/" },
     ]
 
     return (
         <nav className={styles.navbar}>
-            <div className={`${styles['navbar-container']}`}>
-
-           
+            <div className={`${styles['navbar-container']}`}>           
             {
                 navLinks.map(link => (
                     <Link key={link.title} href={link.path} passHref>
