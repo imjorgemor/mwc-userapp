@@ -1,0 +1,27 @@
+.container {
+    background-color: var(--accent-3);
+    width: 100vw;
+    padding: 1rem 1rem;
+}
+
+.project {
+    background-color: var(--accent-3);
+    margin: .5rem auto 1rem;
+    display: flex;
+    padding: 1rem;
+    min-height: 400px;
+    max-width: 1000px;
+    border: 1px solid var(--accent-1);
+    border-radius: var(--radius);   
+}
+
+.skills {
+    background-color: var(--accent-3);
+    margin: .5rem auto 1rem;
+    display: flex;
+    padding: 1rem;
+    min-height: 200px;
+    max-width: 1000px;
+    border: 1px solid var(--accent-1);
+    border-radius: var(--radius);   
+}

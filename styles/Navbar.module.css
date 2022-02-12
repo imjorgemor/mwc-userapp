@@ -1,12 +1,22 @@
 .navbar {
-    margin: .75rem auto 1rem;
-    padding: 0 1.5rem;
+    border-bottom: 1px solid var(--accent-1);
+}
+
+.navbar-container {
+    margin: .5rem auto;
+    padding: 0 .8rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start;
     max-width: 1048px;
-    height: 100%;
+    height: 100%; 
+    overflow-x: scroll;
+}
+
+.navbar-container::-webkit-scrollbar{
+    display: none;
 }
 
 .link {
@@ -29,4 +39,5 @@
 
 .link:hover, .active-link:hover{
     background-color: var(--accent-1);
+    color: var(--black);
 }

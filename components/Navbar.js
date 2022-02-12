@@ -16,6 +16,9 @@ const Navbar = () => {
 
     return (
         <nav className={styles.navbar}>
+            <div className={`${styles['navbar-container']}`}>
+
+           
             {
                 navLinks.map(link => (
                     <Link key={link.title} href={link.path} passHref>
@@ -25,6 +28,7 @@ const Navbar = () => {
                     </Link>
                 ))
             }
+             </div>
         </nav>
     )
 }

@@ -1,7 +1,42 @@
 .main {
     margin: auto;
     display: flex;
-    max-width: 1048px;
-    padding: 1rem 1.5rem;
+    flex-direction: column;
+    padding: 2rem 1.5rem 2rem;
+    z-index: 1;
+    position: relative;
+    background: var(--white);
+    overflow: hidden;
+    height: 100%;
 }
-   
+
+.main::before {
+    z-index: -999;
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 50%;
+    height: 60%;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #50e3c2, #7928ca);
+    filter: blur(200px);
+    animation: rotation 80s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.register-title {
+    margin: 1rem auto 1rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}

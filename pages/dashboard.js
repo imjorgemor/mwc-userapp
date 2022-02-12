@@ -2,18 +2,21 @@ import Layout from "../components/Layout"
 import styles from "../styles/Dashboard.module.css"
 
 const dashboard = () => {
-  return (
-    <Layout
+
+
+
+
+    return (
+        <Layout
             page={"Dashboard"}
         >
-            <div className={styles.main}>
-                desde overview del dashboard
-               
-
-    
+            <div className={styles.container}>
+                <div className={styles.main}>
+                    
+                </div>
             </div>
         </Layout>
-  )
+    )
 }
 
 export default dashboard

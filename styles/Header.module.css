@@ -1,12 +1,18 @@
-.header{
-    margin: 1rem auto 0;
-    padding: 0 1.5rem;
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid var(--accent-1);
+}
+
+.header-container {
+    margin: 0 auto;
+    padding: 1rem 1.5rem 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     max-width: 1048px;
     height: 100%;
+    position: relative;
 }
 
 .logo {
@@ -14,27 +20,23 @@
     font-weight: 600;
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-    gap: .5rem;
+    gap: 0.5rem;
 }
 
-.avatar-container{
+.avatar-container {
     width: 30px;
     height: 30px;
     border-radius: 50px;
     overflow: hidden;
 }
 
-.username{
-    font-size: .8rem;
+.username {
+    font-size: 0.8rem;
     font-weight: 600;
 }
-
-
-   
-

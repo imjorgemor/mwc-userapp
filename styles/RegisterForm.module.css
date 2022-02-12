@@ -1,12 +1,7 @@
 .form-section {
     margin: 1rem auto;
     width: 350px;
-}
-
-.register-title {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    z-index: 9;
 }
 
 .form-container {
@@ -37,6 +32,7 @@
     font-weight: 400;
     color: var(--white);
     background-color: var(--black);
+    border: none;
 }
 
 .input-submit:hover {

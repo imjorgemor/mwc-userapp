@@ -3,7 +3,10 @@
     --white: #fff;
     --accent-1: #eaeaea;
     --accent-2: #666;
+    --accent-3: #fafafa;
     --radius: 5px;
+    --bg-cyan: #50e3c2;
+    --bg-violet: #7928ca;
 }
 
 *, html,

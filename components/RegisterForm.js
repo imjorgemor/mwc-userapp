@@ -3,6 +3,7 @@ import styles from "../styles/RegisterForm.module.css"
 import { useRouter } from 'next/router';
 import { useContext } from "react";
 import AppContext from '../AppContext';
+import avatarGen from "../helpers/avatarGen";
 
 
 const RegisterForm = () => {
@@ -11,33 +12,26 @@ const RegisterForm = () => {
     
     const router = useRouter();
 
+    
+
     const handleSubmit = e => {
         e.preventDefault();
-
-        const handleColor = () => {
-            const hexBase = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
-            let hexColor = "#";
-            for (let i = 0; i < 6; i++) {
-                hexColor += hexBase[Math.floor(Math.random() * hexBase.length)];
-                if (hexColor.length === 7) {
-                    setAvatar(hexColor)
-                }
-            }
-        }
-        handleColor();
 
         if ([email, name, surname, country, city].includes("")) {
             setError(true);
             return
         }
-        setError(false)
+        setError(false);
 
-        !error && router.push('/dashboard')
+        !error && router.push('/dashboard');
+
+        const color = avatarGen();
+        setAvatar(color) 
     }
 
     return (
         <section className={`${styles['form-section']}`}>
-            <h1 className={`${styles['register-title']}`}>Join the best <br />frontend team</h1>
+
             {
                 error && <ErrorMessage message="All fields are mandatory" />
             }

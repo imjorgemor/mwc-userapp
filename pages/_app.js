@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
     const [city, setCity] = useState("");
     const [about, setAbout] = useState("");
     const [error, setError] = useState(false);
-    const [avatar, setAvatar] = useState("");
+    const [avatar, setAvatar] = useState("#111");
 
     const data = {email, setEmail, name, setName, surname, setSurname, country, setCountry, city, setCity, about, setAbout, error, setError, avatar, setAvatar};
 
