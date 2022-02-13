@@ -6,7 +6,7 @@ import styles from "../styles/Dashboard.module.css"
 
 const dashboard = () => {
 
-    const { email, name, surname, country, city, about, experienceList, skillList, setSkillList } = useContext(AppContext);
+    const { email, name, surname, country, city, about, experienceList} = useContext(AppContext);
 
     const [lastRole] = experienceList;
 
