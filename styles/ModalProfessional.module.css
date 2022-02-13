@@ -18,8 +18,9 @@
     background-color: var(--white);
     border-radius: var(--radius);
     position: relative;
-    min-width: 350px;
-    max-width: 650px;
+    min-width: 400px;
+    min-height: 425px;
+    max-width: 750px;
     height: 100%;
 }
 
@@ -46,8 +47,7 @@
     border-radius: var(--radius);
     background-color: transparent;
     transition: background-color .3s ease;
-    border: none;
-   
+    border: none; 
 }
 
 .close-modal:hover{
@@ -71,7 +71,7 @@
 }
 
 .input-submit {
-    margin-top: 1rem;
+    margin: 1rem 0 2rem;
     display: inline-block;
     width: 100%;
     padding: 0 0.75rem;
