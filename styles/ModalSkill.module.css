@@ -1,0 +1,118 @@
+.modal {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.632);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5rem 1rem 21.5rem;
+}
+
+.form-container {
+    margin: auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: var(--radius);
+    position: relative;
+    width: 500px;
+    min-height: 300px;
+}
+
+.close-modal {
+    margin: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--accent-2);
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius);
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.close-modal:hover {
+    cursor: pointer;
+    background-color: var(--accent-1);
+    color: var(--black);
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.input-form {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 0.75rem;
+    height: 2rem;
+    font-size: 1rem;
+    border: 1px solid var(--accent-1);
+    border-radius: var(--radius);
+}
+
+.input-form:focus {
+    outline: 1px solid var(--black);
+}
+
+.input-submit {
+    display: inline-block;
+    width: 100%;
+    padding: 0 0.75rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: var(--radius);
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--black);
+    border: none;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.input-submit:hover {
+    cursor: pointer;
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--black);
+}
+
+.input-wrapper {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-wrapper:nth-of-type(1) {
+    flex: 1;
+}
+
+.skill-container{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.skill-list{
+    padding: 1rem;
+    border: 1px solid var(--accent-1);
+    border-radius: var(--radius);
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}

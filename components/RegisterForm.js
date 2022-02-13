@@ -12,8 +12,6 @@ const RegisterForm = () => {
     
     const router = useRouter();
 
-    
-
     const handleSubmit = e => {
         e.preventDefault();
 
@@ -25,8 +23,8 @@ const RegisterForm = () => {
 
         !error && router.push('/dashboard');
 
-        const color = avatarGen();
-        setAvatar(color) 
+        const color1 = avatarGen();
+        setAvatar(color1) 
     }
 
     return (

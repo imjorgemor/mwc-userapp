@@ -10,8 +10,7 @@ const Navbar = () => {
     const navLinks = [
         { title: "Overview", path: "/dashboard" },
         { title: "Professional", path: "/experience" },
-        { title: "Settings", path: "/account" },
-        { title: "Log out", path: "/" },
+        { title: "Log out", path: "/" }
     ]
 
     return (

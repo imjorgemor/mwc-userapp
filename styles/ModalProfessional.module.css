@@ -1,0 +1,105 @@
+.modal {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.632);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5rem 1rem 21.5rem;
+}
+
+.form-container {
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: var(--radius);
+    position: relative;
+    min-width: 400px;
+    max-width: 650px;
+    height: 100%;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper > legend {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.close-modal {
+    margin: .5rem;
+    padding: .5rem 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--accent-2);
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: .5rem .75rem;
+    border-radius: var(--radius);
+    background-color: transparent;
+    transition: background-color .3s ease;
+    border: none;
+   
+}
+
+.close-modal:hover{
+    cursor: pointer;
+    background-color: var(--accent-1);
+    color: var(--black);
+}
+
+.input-form {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 0.75rem;
+    height: 3rem;
+    font-size: 1rem;
+    border: 1px solid var(--accent-1);
+    border-radius: var(--radius);
+}
+
+.input-form:focus {
+    outline: 1px solid var(--black);
+}
+
+.input-submit {
+    margin-top: 1rem;
+    display: inline-block;
+    width: 100%;
+    padding: 0 0.75rem;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: var(--radius);
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--black);
+    border: none;
+    transition: all .3s ease;
+    border: 1px solid transparent;
+}
+
+.input-submit:hover {
+    cursor: pointer;
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--black);
+}
+
+.input-wrapper {
+    margin-top: .8rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem
+}
+
+.input-wrapper > label {
+    font-size: .8rem;
+}

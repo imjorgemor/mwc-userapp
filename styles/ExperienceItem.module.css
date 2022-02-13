@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--accent-2);
+    padding: 0.5rem 0 .5rem .5rem;
+    border-radius: var(--radius);
+}
+
+.company {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.role {
+    font-weight: 300;
+    width: 100px;
+}
+
+.year {
+    font-weight: 300;
+    width: 100px;
+}
+
+.delete {
+    color: var(--accent-2);
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: .5rem .75rem;
+   margin: .5rem;
+    border-radius: var(--radius);
+    background-color: transparent;
+    transition: background-color .3s ease;
+    border: none;
+}
+
+.delete:hover{
+    cursor: pointer;
+    background-color: var(--accent-1);
+    color: var(--black);
+}
