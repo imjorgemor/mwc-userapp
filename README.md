@@ -1,5 +1,7 @@
 # MWC HACKATTON22
 
+![login](https://github.com/imjorgemor/mwc-userapp/blob/main/public/img/signup.png)
+
 * [About The Project](#about)
 * [Built With](#built-with)
 * [Setup](#setup)
