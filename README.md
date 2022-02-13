@@ -50,10 +50,16 @@ npm run dev
 Sign up form on the first page storagin locally al the user data.
 
 ### Auto avatar generator
-After creating an account an avatar is autimatically generated with the initial of the user name and a random bakcground color.
+After creating an account an avatar is autimatically generated with the initial of the user name and a random background color.
 
 ### Dashboard
 Personal Dashboard where the user can see his personal information, edit his professional experience and add a tech stack with badges.
+
+### useContext API
+User personal data as name, email, country is storaged temporally in a useContext so it can be accesible and modified in the different taps of the app.
+
+### Professional features
+Professional experience and technologies are managed by the user who can create an delete as user preferences.
 
 ### Css responsive design good practices
 Using relative withs and max-widths css properties together with FLEXBOX allowed this project to be responsive from mobile to laptop.
@@ -61,13 +67,16 @@ Using relative withs and max-widths css properties together with FLEXBOX allowed
 
 ## App preview
 ### LogIn page
-![login]()
 
-### LogIn page
-![dashboar]()
+![login](https://github.com/imjorgemor/mwc-userapp/blob/main/public/img/signup.png)
+
+### Dashboard page
+
+![dashboar](https://github.com/imjorgemor/mwc-userapp/blob/main/public/img/dashboard.png)
 
 ### Professional
-![professional]()
+
+![professional](https://github.com/imjorgemor/mwc-userapp/blob/main/public/img/professional.gif)
 
 
 ## Contact
