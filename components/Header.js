@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { useContext } from "react";
 import AppContext from '../AppContext';
 import { useRouter } from 'next/router'
@@ -24,7 +23,9 @@ const Header = () => {
                             <div>
                                 <p className={styles.username}>{`Hola, ${name}`}</p>
                             </div>
-                            <Avatar />
+                            <Avatar
+                                size="small"
+                            />
                         </div>
                     )
                 }

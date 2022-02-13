@@ -1,4 +1,4 @@
-.avatar-ready{
+.avatar-small{
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -7,8 +7,24 @@
     justify-content: center;
 }
 
-.avatar-ready > p {
+.avatar-small > p {
     font-size: 1rem;
+    font-weight: 600;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.avatar-big{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-big > p {
+    font-size: 5rem;
     font-weight: 600;
     color: var(--black);
     text-transform: uppercase;

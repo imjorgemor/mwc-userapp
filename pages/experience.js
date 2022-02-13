@@ -73,18 +73,19 @@ const experience = () => {
                     />
                     }
                 </div>
+
                 <div className={styles.skill}>
-                {
-                            skillList.length > 0 && (
-                                skillList.map(tech => (
-                                    <SkillBadge
-                                        key={tech}
-                                        tech={tech}
-                                        deleteSkill={deleteSkill}
-                                    />
-                                ))
-                            )
-                        }
+                    {
+                        skillList.length > 0 && (
+                            skillList.map(tech => (
+                                <SkillBadge
+                                    key={tech}
+                                    tech={tech}
+                                    deleteSkill={deleteSkill}
+                                />
+                            ))
+                        )
+                    }
                 </div>
             </div>
         </Layout>

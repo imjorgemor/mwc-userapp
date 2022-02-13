@@ -50,18 +50,18 @@
 }
 
 .skill {
-    border: 1px solid var(--accent-1);
-    border-radius: var(--radius);
     background-color: var(--accent-3);
     margin: 1rem auto 1rem;
+    display: flex;
     padding: 1rem;
-    min-height: 100px;
-    display: inline-flex;
+    min-height: 150px;
+    max-width: 1000px;
+    border: 1px solid var(--accent-1);
+    border-radius: var(--radius);
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 

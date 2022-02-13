@@ -18,13 +18,9 @@ const ModalProfessional = ({ setModalExperience, saveExperience }) => {
         }
 
         setError(false);
-
-        const experienceItem = { company, year, position }
-
-
+        const experienceItem = { company, year, position };
         saveExperience(experienceItem);
-
-        setModalExperience(false)
+        setModalExperience(false);
         setCompany("");
         setYear("");
         setPosition("");
