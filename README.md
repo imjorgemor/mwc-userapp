@@ -1,35 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MWC HACKATTON22
 
-## Getting Started
+* [About The Project](#about)
+* [Built With](#built-with)
+* [Setup](#setup)
+* [Features](#features)
+* [App preview](#app-preview)
+* [Contact](#contact)
+* [License](#license)
 
-First, run the development server:
 
+## About
+
+Within the MWC22 Digital Talent has organized a hackatton. To be elegible for the final phase I have developed a Front-end SPA of a employment-oriented online service platform for developers built with React and Nextjs.
+
+
+## Built With
+
+This project has built with:
+* [React](https://reactjs.org/)
+* [Next](https://nextjs.org/) 
+* CSS Modules integrated with Next
+
+
+## Setup
+
+### Installation
+
+Get a local copy up and run these following simple steps:
+
+Clone the repo
 ```bash
-npm run dev
-# or
-yarn dev
+git clone https://github.com/your_username_/Project-Name.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install NPM packages
+```bash
+npm install
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Run the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Sign Up form
+Sign up form on the first page storagin locally al the user data.
 
-## Learn More
+### Auto avatar generator
+After creating an account an avatar is autimatically generated with the initial of the user name and a random bakcground color.
 
-To learn more about Next.js, take a look at the following resources:
+### Dashboard
+Personal Dashboard where the user can see his personal information, edit his professional experience and add a tech stack with badges.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Css responsive design good practices
+Using relative withs and max-widths css properties together with FLEXBOX allowed this project to be responsive from mobile to laptop.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## App preview
+### LogIn page
+![login]()
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### LogIn page
+![dashboar]()
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# mwc-userapp
+### Professional
+![professional]()
+
+
+## Contact
+
+* [github](https://github.com/imjorgemor)
+* [linkedin](https://www.linkedin.com/in/jorge-mor-reactdev/)
+
+
+## License
+This code is under the [MIT](https://opensource.org/licenses/MIT) license. For the full copyright and license information please view the LICENSE file that was distributed with this source code.
+

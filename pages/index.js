@@ -9,7 +9,7 @@ export default function Home() {
             page={"Home"}
         >
             <div className={styles.main}>
-                <h1 className={`${styles['register-title']}`}>Join the best <br />frontend team</h1>
+                <h1 className={`${styles['register-title']}`}>Join the best <br />frontend community</h1>
                 <RegisterForm
                 />
             </div>

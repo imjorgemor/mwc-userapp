@@ -7,7 +7,7 @@
     position: relative;
     background: var(--white);
     overflow: hidden;
-    height: 100%;
+    height: 100vh;
 }
 
 .main::before {
