@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import AppContext from '../AppContext';
-import { useRouter } from 'next/router'
-import styles from "../styles/Header.module.css"
+import AppContext from "../AppContext";
+import { useRouter } from "next/router";
 import Avatar from "./Avatar";
+import styles from "../styles/Header.module.css";
 
 const Header = () => {
 
@@ -15,7 +15,6 @@ const Header = () => {
                 <div className={styles.logo}>
                     <p>MWC22</p>
                 </div>
-
                 {
                     route !== "/"
                     && (

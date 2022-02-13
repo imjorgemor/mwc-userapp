@@ -1,9 +1,7 @@
-import { useContext, useEffect } from 'react';
-import AppContext from '../AppContext';
+import { useContext, useEffect } from "react";
+import AppContext from "../AppContext";
 import Layout from "../components/Layout"
-import Avatar from '../components/Avatar';
-import ExperienceItem from '../components/ExperienceItem';
-import SkillBadge from '../components/SkillBadge';
+import Avatar from "../components/Avatar";
 import styles from "../styles/Dashboard.module.css"
 
 const dashboard = () => {
@@ -11,11 +9,6 @@ const dashboard = () => {
     const { email, name, surname, country, city, about, experienceList, skillList, setSkillList } = useContext(AppContext);
 
     const [lastRole] = experienceList;
-
-
-    useEffect(() => {
-
-    }, [experienceList])
 
     return (
         <Layout
@@ -25,7 +18,6 @@ const dashboard = () => {
                 <div className={`${styles['top-section']}`}>
                     <h2> Profile </h2>
                 </div>
-
                 <div className={styles.profile}>
                     <div className={`${styles['personal-data']}`}>
                         <div>
@@ -44,8 +36,6 @@ const dashboard = () => {
                         <h2> About </h2>
                         <p>{about}</p>
                     </div>
-
-                   
                 </div>
             </div>
         </Layout>

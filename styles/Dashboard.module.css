@@ -16,7 +16,7 @@
 }
 
 .top-section > h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-transform: capitalize;
 }
 
@@ -58,3 +58,9 @@
     text-transform: capitalize;
 }
 
+@media screen and (min-width: 688px) {
+    .top-section > h2 {
+        font-size: 2rem;
+        text-transform: capitalize;
+    }
+}

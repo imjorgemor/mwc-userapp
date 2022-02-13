@@ -1,5 +1,5 @@
-import { useContext } from 'react';
-import AppContext from '../AppContext';
+import { useContext } from "react";
+import AppContext from "../AppContext";
 import styles from "../styles/ExperienceItem.module.css"
 
 const ExperienceItem = ({ company, position, year }) => {
@@ -9,11 +9,6 @@ const ExperienceItem = ({ company, position, year }) => {
     const deleteExperience = company => {
         const experienceUpdated = experienceList.filter(row => row.company !== company);
         setExperienceList(experienceUpdated);
-    }
-
-    const eliminarGasto = id => {
-        const gastosActualizados = gastos.filter(gasto => gasto.id !== id);
-        setGastos(gastosActualizados);
     }
 
     return (

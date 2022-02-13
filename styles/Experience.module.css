@@ -17,17 +17,17 @@
 }
 
 .top-section > h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .button-base {
     height: 2.5rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
     background-color: var(--black);
     color: var(--white);
     border: 1px solid transparent;
     border-radius: var(--radius);
-    font-size: 1rem;
+    font-size: .8rem;
     transition: all .3s ease;
 }
 
@@ -66,4 +66,14 @@
     gap: 1rem;
 }
 
-
+@media screen and (min-width: 688px) {
+    .top-section > h2 {
+        font-size: 2rem;
+        text-transform: capitalize;
+    }
+    .button-base {
+        padding: 0 2rem;
+        font-size: 1rem;
+    }
+    
+}

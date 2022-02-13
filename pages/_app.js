@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import AppContext from '../AppContext'
-import '../styles/globals.css'
+import { useState } from "react";
+import AppContext from "../AppContext";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
 
@@ -15,7 +15,6 @@ function MyApp({ Component, pageProps }) {
     const [experienceList, setExperienceList] = useState([]);
     const [skillList, setSkillList] = useState([]);
    
-
     const data = {email, setEmail, name, setName, surname, setSurname, country, setCountry, city, setCity, about, setAbout, error, setError, avatar, setAvatar, experienceList, setExperienceList, skillList, setSkillList};
 
   return (

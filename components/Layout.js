@@ -1,26 +1,25 @@
-import Head from 'next/head'
-import Header from './Header'
-import Navbar from './Navbar'
-import { useRouter } from 'next/router'
-import Footer from './Footer'
+import Head from "next/head"
+import Header from "./Header"
+import Navbar from "./Navbar"
+import Footer from "./Footer"
+import { useRouter } from "next/router"
 
 const Layout = ({ children, page }) => {
 
-    const {route} = useRouter();
-    
+    const { route } = useRouter();
+
     return (
         <div >
             <Head>
                 <title>MWC CHALLENGE - {page}</title>
-                <meta name="description" content="website of the MWC22 challenge hackaton" />
+                <meta name="description" content="Website of the MWC22 challenge hackaton" />
             </Head>
-            <Header/>
+            <Header />
             {
-                 route !== "/" && <Navbar />
+                route !== "/" && <Navbar />
             }
             {children}
             <Footer />
-            
         </div>
     )
 }

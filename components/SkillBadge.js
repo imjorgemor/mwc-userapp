@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from "../styles/SkillBadge.module.css"
 
 const SkillBadge = ({tech, deleteSkill}) => {

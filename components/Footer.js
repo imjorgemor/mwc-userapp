@@ -1,4 +1,3 @@
-
 import styles from "../styles/Footer.module.css"
 
 const Footer = () => {
@@ -10,7 +9,6 @@ const Footer = () => {
                 >
                     <img src="/img/github.svg"  alt="github logo" />
                 </a>
-
                 <a
                     className={`${styles['social-link']}`} href="https://www.linkedin.com/in/jorge-mor-reactdev/"
                 >

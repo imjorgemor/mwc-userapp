@@ -1,9 +1,9 @@
-import ErrorMessage from "./ErrorMessage"
-import styles from "../styles/RegisterForm.module.css"
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import { useContext } from "react";
-import AppContext from '../AppContext';
+import ErrorMessage from "./ErrorMessage"
+import AppContext from "../AppContext";
 import avatarGen from "../helpers/avatarGen";
+import styles from "../styles/RegisterForm.module.css"
 
 
 const RegisterForm = () => {
@@ -29,11 +29,9 @@ const RegisterForm = () => {
 
     return (
         <section className={`${styles['form-section']}`}>
-
             {
                 error && <ErrorMessage message="All fields are mandatory" />
             }
-
             <form
                 className={`${styles['form-container']}`}
                 onSubmit={handleSubmit}

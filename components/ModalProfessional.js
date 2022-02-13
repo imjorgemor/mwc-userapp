@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import ErrorMessage from './ErrorMessage'
-import styles from '../styles/ModalProfessional.module.css'
+import { useState } from "react";
+import ErrorMessage from "./ErrorMessage";
+import styles from "../styles/ModalProfessional.module.css";
 
 
 const ModalProfessional = ({ setModalExperience, saveExperience }) => {

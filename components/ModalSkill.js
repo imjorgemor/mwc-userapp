@@ -1,7 +1,7 @@
-import { useContext, useEffect, useState } from 'react';
-import AppContext from '../AppContext';
-import styles from "../styles/ModalSkill.module.css"
-import SkillBadge from './SkillBadge';
+import { useContext, useState } from "react";
+import AppContext from "../AppContext";
+import styles from "../styles/ModalSkill.module.css";
+import SkillBadge from "./SkillBadge";
 
 const ModalSkill = ({ setModalSkill, deleteSkill }) => {
 
@@ -13,11 +13,6 @@ const ModalSkill = ({ setModalSkill, deleteSkill }) => {
         setSkillList([...skillList, skill])
         setSkill("")
     }
-
-    useEffect(() => {
-        console.log(skillList)
-    }, [skillList])
-
 
     return (
         <div className={styles.modal}>

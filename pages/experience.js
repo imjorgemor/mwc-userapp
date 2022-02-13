@@ -1,12 +1,11 @@
-import { useContext, useState } from 'react';
-import AppContext from '../AppContext';
-import ExperienceItem from '../components/ExperienceItem';
+import { useContext, useState } from "react";
+import AppContext from "../AppContext";
+import ExperienceItem from "../components/ExperienceItem";
 import Layout from "../components/Layout"
 import ModalProfessional from "../components/ModalProfessional"
-import ModalSkill from '../components/ModalSkill';
-import SkillBadge from '../components/SkillBadge';
+import ModalSkill from "../components/ModalSkill";
+import SkillBadge from "../components/SkillBadge";
 import styles from "../styles/Experience.module.css"
-
 
 const experience = () => {
 
@@ -21,7 +20,6 @@ const experience = () => {
     const deleteSkill = tech => {
         const skillListUpdated = skillList.filter(skill => skill !== tech);
         setSkillList(skillListUpdated);
-
     }
 
     return (
@@ -38,13 +36,12 @@ const experience = () => {
                         <span> + </span>Add experience
                     </button>
                 </div>
-
-                {modalExperience && <ModalProfessional
-                    setModalExperience={setModalExperience}
-                    saveExperience={saveExperience}
-                />
+                {
+                    modalExperience && <ModalProfessional
+                        setModalExperience={setModalExperience}
+                        saveExperience={saveExperience}
+                    />
                 }
-
                 <div className={styles.project}>
                     {
                         experienceList.length > 0 &&
@@ -58,7 +55,6 @@ const experience = () => {
                         ))
                     }
                 </div>
-
                 <div className={`${styles['top-section']}`}>
                     <h2>Skills</h2>
                     <button
@@ -67,13 +63,13 @@ const experience = () => {
                     >
                         <span> + </span>Add Skills
                     </button>
-                    {modalSkill && <ModalSkill
-                        setModalSkill={setModalSkill}
-                        deleteSkill={deleteSkill}
-                    />
+                    {
+                        modalSkill && <ModalSkill
+                            setModalSkill={setModalSkill}
+                            deleteSkill={deleteSkill}
+                        />
                     }
                 </div>
-
                 <div className={styles.skill}>
                     {
                         skillList.length > 0 && (

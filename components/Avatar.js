@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import AppContext from '../AppContext';
-import styles from "../styles/Avatar.module.css"
+import AppContext from "../AppContext";
+import styles from "../styles/Avatar.module.css";
 
 const Avatar = ({size}) => {
 
